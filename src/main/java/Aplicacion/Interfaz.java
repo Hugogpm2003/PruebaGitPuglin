@@ -46,6 +46,8 @@ public class Interfaz extends JFrame {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				// llamar al back
+				ConectorMongo conector = new ConectorMongo();
+				conector.añadirPokemon();
 			}
 		});
 		btnNewButton.setBounds(99, 282, 89, 23);
