@@ -23,7 +23,7 @@ public class ConectorMongo {
                 .applyConnectionString(new ConnectionString(connectionString))
                 .serverApi(serverApi)
                 .build();
-        // Create a new client and connect to the server
+        // Create a new client and connect to the server  
         try (MongoClient mongoClient = MongoClients.create(settings)) {
             try {
             	MongoDatabase database = mongoClient.getDatabase("Pokedex");
